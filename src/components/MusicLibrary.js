@@ -3,7 +3,13 @@ import "./MusicLibrary.css";
 
 const initialTracks = [
   { name: "Дом", artist: "группа Люто", url: "/tracks/Home.mp3" },
-  { name: "Трек 2", artist: "Исполнитель 2", url: "/tracks/track2.mp3" },
+  { name: "В очереди", artist: "группа Люто", url: "/tracks/In line.mp3" },
+  {
+    name: "Техника молодёжи",
+    artist: "группа Люто",
+    url: "/tracks/Youth technology.mp3",
+  },
+
   // Добавьте дополнительные треки
 ];
 

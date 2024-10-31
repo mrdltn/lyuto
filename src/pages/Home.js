@@ -33,7 +33,7 @@ function Home() {
       </video>
       {showText !== null && (
         <div className={`welcome-text ${showText ? "fade-in" : "fade-out"}`}>
-          Добро пожаловать на наш сайт!
+          Добро пожаловать на сайт группы Люто!
         </div>
       )}
     </div>
