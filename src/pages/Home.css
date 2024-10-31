@@ -1,0 +1,55 @@
+/* Убираем прокрутку и темную полоску справа */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Фоновое видео */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Помещаем видео под текст */
+}
+
+/* Стиль текста с ненавязчивой рамкой */
+.welcome-text {
+  font-size: 2em;
+  color: white;
+  opacity: 0;
+  padding: 10px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Полупрозрачная рамка */
+  border-radius: 5px; /* Закругленные углы */
+  transition: opacity 2s ease; /* Плавное появление и исчезновение */
+}
+
+/* Анимации для появления и исчезновения текста */
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease; /* Плавное исчезновение */
+}
