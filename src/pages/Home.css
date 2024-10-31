@@ -53,3 +53,22 @@ html {
   opacity: 0;
   transition: opacity 2s ease; /* Плавное исчезновение */
 }
+
+/* Десктопная версия: центрируем видео по умолчанию */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1; /* Видео под текстом */
+}
+
+/* Мобильные устройства с шириной экрана меньше 500px */
+@media (max-width: 500px) {
+  .background-video {
+    object-position: 70% center; /* Смещаем фокус на солиста, который находится примерно на 200px от правого края */
+  }
+}
