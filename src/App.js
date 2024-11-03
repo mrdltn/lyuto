@@ -27,6 +27,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 // import Navbar from "./components/Navbar";
 import MusicLibrary from "./components/MusicLibrary";
+import Video from "./pages/Video";
 import Contact from "./pages/Contact";
 import "./App.css";
 
@@ -46,6 +47,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/music" element={<MusicLibrary />} />
+          <Route path="/video" element={<Video />} />
           <Route path="/contacts" element={<Contact />} />
         </Routes>
       </div>

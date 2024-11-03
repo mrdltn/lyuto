@@ -1,0 +1,60 @@
+.contacts-section {
+  background-image: url("/public/images/lyuto_backgroundSite.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Фиксирует фон при прокрутке */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.contact-form {
+  /* background-image: url("/public/images/lyuto_backgroundSite.jpg"); */
+  background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный чёрный фон */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Добавляет тень для глубины */
+}
+
+.contact-form h2 {
+  margin-top: 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для полей */
+  color: black;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff5733; /* Цвет кнопки */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e64a19; /* Цвет кнопки при наведении */
+}
